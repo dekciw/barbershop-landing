@@ -1,0 +1,27 @@
+@import "colors";
+@import "fonts";
+
+@mixin button {
+  width: 232px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: 'Muller-Bold', sans-serif;
+  background-color: $additional-color;
+  color: $general-color-text;
+}
+
+.button {
+  @include button;
+  height: 60px;
+  padding: 23px 33px;
+  font-size: 18px;
+}
+
+.button-small {
+  @include button;
+  height: 40px;
+  padding: 15px 39px 13px 39px;
+  font-size: 16px;
+  line-height: 15px;
+}

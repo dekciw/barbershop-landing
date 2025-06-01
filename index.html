@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Strong Club Barbershop</title>
+		<link
+			type="image/x-icon"
+			href="src/images/icons/favicon.ico"
+			rel="shortcut icon"
+		/>
+		<link type="Image/x-icon" href="src/images/icons/favicon.ico" rel="icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="src/slick/slick/slick.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="src/slick/slick/slick-theme.css"
+		/>
+		<link rel="stylesheet" href="dist/style.min.css" />
+	</head>
+	<body>
+		<main>
+			<nav class="nav">
+				<div class="burger" id="burger">
+					<svg
+						id="nav-svg"
+						enable-background="new 0 0 512 512"
+						height="512"
+						viewBox="0 0 512 512"
+						width="512"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"
+						/>
+						<path
+							d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"
+						/>
+						<path
+							d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"
+						/>
+					</svg>
+				</div>
+				<div class="logo">
+					<img class="logo-img" src="src/images/logo.png" alt="Логитип сайта" />
+				</div>
+
+				<div class="menu-container">
+					<div class="nav-overlay" id="nav-overlay"></div>
+
+					<ul class="nav-menu" id="menu">
+						<div class="close">
+							<svg
+								version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								x="0px"
+								y="0px"
+								viewBox="0 0 492 492"
+								style="enable-background: new 0 0 492 492"
+								xml:space="preserve"
+							>
+								<g>
+									<g>
+										<path
+											d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"
+										/>
+									</g>
+								</g>
+							</svg>
+						</div>
+						<li><a class="nav-link" id="services-link" href="#">Услуги</a></li>
+						<li><a class="nav-link" id="price-link" href="#">Цены</a></li>
+						<li><a class="nav-link" id="masters-link" href="#">Барберы</a></li>
+						<li><a class="nav-link" id="about-link" href="#">О нас</a></li>
+					</ul>
+				</div>
+
+				<div class="phone">
+					<img
+						class="animate__animated animate__heartBeat animate__infinite infinite phone-img"
+						src="src/images/icons/phone.svg"
+						alt="phone-logo"
+					/>
+					<div class="phone-number">
+						<a class="nav-link-phone" href="tel:+79128169396"
+							>+7 912 816-93-96</a
+						>
+					</div>
+				</div>
+			</nav>
+
+			<header class="header">
+				<div class="header-desc">
+					<h1 class="header-title">
+						Создайте деловой имидж, который достоин Вас!
+					</h1>
+					<h2 class="header-subtitle">
+						Мужские стрижки и бритье в центре Москвы
+					</h2>
+					<button
+						type="button"
+						id="btn-order"
+						class="button hvr-shutter-out-horizontal"
+					>
+						Записаться онлайн
+					</button>
+				</div>
+				<div class="header-images">
+					<img
+						class="header-img"
+						src="./src/images/man-header.png"
+						alt="barber-man"
+					/>
+				</div>
+				<div class="header-text">
+					<span class="strong">strong</span>
+					<span class="club">club</span>
+				</div>
+			</header>
+
+			<section>
+				<div class="information">
+					<div class="information-blocks">
+						<div class="information-block">
+							<img
+								class="information-img animate__animated animate__pulse animate__infinite infinite animate__delay-2s"
+								src="src/images/icons/location.svg"
+								alt="Локация"
+							/>
+							<h2 class="information-text">Находимся в центре Москвы</h2>
+						</div>
+						<div class="information-block">
+							<img
+								class="information-img animate__animated animate__pulse animate__infinite infinite animate__delay-2s"
+								src="src/images/icons/masters.svg"
+								alt="Лучшие мастера"
+							/>
+							<h2 class="information-text">Лучшие мастера</h2>
+						</div>
+						<div class="information-block">
+							<img
+								class="information-img animate__animated animate__pulse animate__infinite infinite animate__delay-2s"
+								src="src/images/icons/clients.svg"
+								alt="Довольные клиенты"
+							/>
+							<h2 class="information-text">Довольные клиенты</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="about" id="about">
+					<div class="about-title general-title">
+						Strong Club – это намного больше, чем просто мужская парикмахерская
+					</div>
+					<div class="about-blocks">
+						<div class="advantages">
+							<img
+								class="advantages-images"
+								src="src/images/about.png"
+								alt="Мастер и клиент"
+							/>
+							<div class="advantages-block">
+								<div
+									class="advantages-desc advantages-desc wow animate__fadeIn"
+								>
+									<div class="advantages-img-block">
+										<img
+											class="advantages-img"
+											src="src/images/icons/coffee.svg"
+											alt="Чашечка с кофе"
+										/>
+									</div>
+									<h2 class="advantages-text">
+										Мы предложим вам чашечку кофе или чая
+									</h2>
+								</div>
+								<div class="advantages-desc wow animate__fadeIn">
+									<div class="advantages-img-block">
+										<img
+											class="advantages-img"
+											src="src/images/icons/shear.svg"
+											alt="Ножницы"
+										/>
+									</div>
+									<h2 class="advantages-text">
+										Мы пострижем и побреем вас по всем европейским традициям
+									</h2>
+								</div>
+								<div
+									class="advantages-desc advantages-desc wow animate__fadeIn"
+								>
+									<div class="advantages-img-block">
+										<img
+											class="advantages-img"
+											src="src/images/icons/arrows.svg"
+											alt="Стрелочки"
+										/>
+									</div>
+									<h2 class="advantages-text">
+										И скоро вы снова захотите вернуться в наш барбершоп
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div class="description">
+							<div class="description-texts">
+								<p class="description-text">
+									Это место, где Вам помогут найти свой собственный,
+									неповторимый стиль. Стоит довериться мастерам Strong Club один
+									раз, и, поверьте, новый образ не оставит Вас равнодушным.
+									Мужские стрижки и опасное бритье — это наш профиль, и мы
+									уверены, что наши барберы делают это лучше всех.
+								</p>
+								<p class="description-text">
+									У нас есть всё, что требуется настоящему мужчине: атмосфера
+									брутальности и мужского духа, профессионализм барберов и
+									сохранение европейских традиций барберинга, а также отличный
+									кофе и хорошая компания.
+								</p>
+								<p class="description-text">
+									Наши Барберы не только создадут уникальный внешний вид, но и
+									поддержат разговор на любую тему!
+								</p>
+							</div>
+							<div class="description-img">
+								<img
+									class="description-images"
+									src="src/images/icons/about-logo.png"
+									alt="Мужчина с бородой"
+								/>
+							</div>
+						</div>
+						<div class="line"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="info">
+				<div class="extension-info">
+					<div class="extension-overlay">
+						<div class="extension-block">
+							<h2 class="extension-title">
+								Следи за нами в <span class="extension-bold">Instagram</span>,
+								что бы быть в курсе наших акций!
+							</h2>
+							<form action="https://www.instagram.com/" target="_blank">
+								<button
+									class="button hvr-shutter-out-horizontal wow animate__tada"
+								>
+									Подписаться
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="price" id="price">
+					<h2 class="price-general-title general-title">
+						Прайс на наши услуги
+					</h2>
+					<div class="price-blocks">
+						<div class="price-line"></div>
+						<div class="price-basic">
+							<h3 class="price-title">Основные услуги</h3>
+							<ul>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Стрижка мужская</h4>
+										<p class="price-subtext">
+											подбор стрижки, 2 мытья, укладка
+										</p>
+									</div>
+									<p class="price-value">1 400 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Стрижка удлинённая</h4>
+										<p class="price-subtext">
+											подбор стрижки, 2 мытья, укладка
+										</p>
+									</div>
+									<p class="price-value">2 100 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Стрижка машинкой</h4>
+										<p class="price-subtext">без ножниц</p>
+									</div>
+									<p class="price-value">950 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Стрижка детская</h4>
+										<p class="price-subtext">
+											от 4 до 14 лет включительно, не удлиненная
+										</p>
+									</div>
+									<p class="price-value">1 100 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Стрижка бороды</h4>
+										<p class="price-subtext">
+											с распариванием и окантовкой бритвой шаветт
+										</p>
+									</div>
+									<p class="price-value">950 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Классическое бритьё</h4>
+										<!--                                <p class="price-value"></p>-->
+									</div>
+									<p class="price-value">1 400 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Королевское бритьё</h4>
+										<!--                                <p class="price-subtext"></p>-->
+									</div>
+									<p class="price-value">1 850 руб.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="price-overall">
+							<h3 class="price-title">Комплексные услуги</h3>
+							<ul>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Отец + сын</h4>
+										<!--                                <p class="price-subtext"></p>-->
+									</div>
+									<p class="price-value">2 200 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Друг + друг</h4>
+										<!--                                <p class="price-subtext"></p>-->
+									</div>
+									<p class="price-value">2 500 руб.</p>
+								</li>
+								<li class="price-block">
+									<div class="price-text">
+										<h4 class="price-subtitle">Стрижка + бритьё</h4>
+										<!--                                <p class="price-subtext"></p>-->
+									</div>
+									<p class="price-value">2 500 руб.</p>
+								</li>
+							</ul>
+							<div class="price-add">
+								<h3 class="price-title" style="padding-top: 50px">
+									Дополнительные услуги
+								</h3>
+								<ul>
+									<li class="price-block">
+										<div class="price-text">
+											<h4 class="price-subtitle">Укладка волос</h4>
+											<!--                                    <p class="price-subtext"></p>-->
+										</div>
+										<p class="price-value">300 руб.</p>
+									</li>
+									<li class="price-block">
+										<div class="price-text">
+											<h4 class="price-subtitle">Коррекция воском</h4>
+											<p class="price-subtext">
+												удаление нежелательных волос на лице
+											</p>
+										</div>
+										<p class="price-value">450 руб.</p>
+									</li>
+									<li class="price-block">
+										<div class="price-text">
+											<h4 class="price-subtitle">Камуфляж седины</h4>
+											<p class="price-subtext">
+												предварительная консультация с мастером
+											</p>
+										</div>
+										<p class="price-value">1 100 руб.</p>
+									</li>
+									<li class="price-block">
+										<div class="price-text">
+											<h4 class="price-subtitle">Бритьё головы</h4>
+											<!--<p class="price-subtext"></p>-->
+										</div>
+										<p class="price-value">1 250 руб.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mobile-price" id="mobile-price">
+				<h2 class="price-general-title general-title">Прайс на наши услуги</h2>
+				<div class="price-accordion" id="accordion">
+					<h3 class="price-title">Основные услуги</h3>
+					<div>
+						<ul>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Стрижка мужская</h4>
+									<p class="price-subtext">подбор стрижки, 2 мытья, укладка</p>
+								</div>
+								<p class="price-value">1 400 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Стрижка удлинённая</h4>
+									<p class="price-subtext">подбор стрижки, 2 мытья, укладка</p>
+								</div>
+								<p class="price-value">2 100 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Стрижка машинкой</h4>
+									<p class="price-subtext">без ножниц</p>
+								</div>
+								<p class="price-value">950 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Стрижка детская</h4>
+									<p class="price-subtext">
+										от 4 до 14 лет включительно, не удлиненная
+									</p>
+								</div>
+								<p class="price-value">1 100 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Стрижка бороды</h4>
+									<p class="price-subtext">
+										с распариванием и окантовкой бритвой шаветт
+									</p>
+								</div>
+								<p class="price-value">950 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Классическое бритьё</h4>
+									<!--                                <p class="price-value"></p>-->
+								</div>
+								<p class="price-value">1 400 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Королевское бритьё</h4>
+									<!--                                <p class="price-subtext"></p>-->
+								</div>
+								<p class="price-value">1 850 руб.</p>
+							</li>
+						</ul>
+					</div>
+					<h3 class="price-title">Комплексные услуги</h3>
+					<div>
+						<ul>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Отец + сын</h4>
+									<!--                                <p class="price-subtext"></p>-->
+								</div>
+								<p class="price-value">2 200 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Друг + друг</h4>
+									<!--                                <p class="price-subtext"></p>-->
+								</div>
+								<p class="price-value">2 500 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Стрижка + бритьё</h4>
+									<!--                                <p class="price-subtext"></p>-->
+								</div>
+								<p class="price-value">2 500 руб.</p>
+							</li>
+						</ul>
+					</div>
+					<h3 class="price-title">Дополнительные услуги</h3>
+					<div>
+						<ul>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Укладка волос</h4>
+									<!--                            <p class="price-subtext"></p>-->
+								</div>
+								<p class="price-value">300 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Коррекция воском</h4>
+									<p class="price-subtext">
+										удаление нежелательных волос на лице
+									</p>
+								</div>
+								<p class="price-value">450 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Камуфляж седины</h4>
+									<p class="price-subtext">
+										предварительная консультация с мастером
+									</p>
+								</div>
+								<p class="price-value">1 100 руб.</p>
+							</li>
+							<li class="price-block">
+								<div class="price-text">
+									<h4 class="price-subtitle">Бритьё головы</h4>
+									<!--<p class="price-subtext"></p>-->
+								</div>
+								<p class="price-value">1 250 руб.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="extension-sale">
+					<div class="extension-overlay">
+						<div class="extension-block">
+							<h2 class="extension-title" id="extension-title">
+								Вы у нас первый раз? Получите
+								<span class="extension-color">скидку 15%</span>
+							</h2>
+							<button
+								class="button hvr-shutter-out-horizontal wow animate__tada"
+								id="extension-button"
+							>
+								Получить скидку
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="masters" id="masters">
+					<h2 class="masters-title general-title">Наши мастера</h2>
+					<h3 class="masters-subtitle">
+						Вот они, простые герои, несущие в мир стиль и безупречный внешний
+						вид. Команда Barber Club каждый день трудится над тем, чтобы
+						создавать и поддерживать ваш индивидуальный стиль, подчеркивать
+						характер и превращать недостатки в достоинства.
+					</h3>
+					<div class="line"></div>
+					<div class="masters-gallery" id="masters-gallery">
+						<div>
+							<img
+								class="masters-img"
+								src="src/images/masters/master02.jpg"
+								alt="Мастер"
+							/>
+							<div class="masters-block" id="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name" id="name">Анастасия</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master01.png" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Марат</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master03.jpg" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Марина</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master04.jpg" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Данфи</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master05.jpg" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Александр</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master06.jpg" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Владислав</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master07.jpg" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Сергей</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master08.jpg" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Афина</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="src/images/masters/master09.jpg" alt="Мастер" />
+							<div class="masters-block">
+								<div class="masters-overlay">
+									<h4 class="masters-name">Владимир</h4>
+									<button
+										type="button"
+										class="button-small hvr-shutter-out-horizontal btn-order"
+									>
+										Записаться
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="request" id="request">
+					<span class="loader"></span>
+					<div class="thanks-close" id="thanks-close">
+						<svg
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							x="0px"
+							y="0px"
+							viewBox="0 0 492 492"
+							style="enable-background: new 0 0 492 492"
+							xml:space="preserve"
+						>
+							<g>
+								<g>
+									<path
+										d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"
+									/>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div class="overlay">
+						<div class="request-img"></div>
+						<h2 class="request-title" id="request-title">
+							Заполните данные для оформления заявки
+						</h2>
+						<form
+							class="request-form"
+							id="request-form"
+							action=""
+							method="get"
+							name="request-form"
+						>
+							<div class="input-data">
+								<label>
+									<input
+										class="input-name"
+										type="text"
+										name="name"
+										id="input-name"
+										placeholder="Ваше имя"
+									/>
+									<div class="error-message" id="error-name"></div>
+								</label>
+								<label>
+									<input
+										class="input-phone"
+										name="phone"
+										id="input-phone"
+										placeholder="Ваш телефон"
+									/>
+									<div class="error-message" id="error-phone"></div>
+								</label>
+							</div>
+							<div class="select-data">
+								<label>
+									<select class="dropdown" name="service" id="select-service">
+										<option disabled selected hidden>Выберите услугу</option>
+										<option value="1">Стрижка мужская</option>
+										<option value="2">Стрижка удлинённая</option>
+										<option value="3">Стрижка машинкой</option>
+										<option value="4">Стрижка детская</option>
+										<option value="5">Стрижка бороды</option>
+										<option value="6">Классическое бритьё</option>
+										<option value="7">Королевское бритьё</option>
+										<option value="8">Отец + Сын</option>
+										<option value="9">Друг + друг</option>
+										<option value="10">Стрижка + бритьё</option>
+										<option value="11">Укладка волос</option>
+										<option value="12">Коррекция воском</option>
+										<option value="13">Камуфляж седины</option>
+										<option value="14">Бритьё головы</option>
+									</select>
+									<div class="error-message" id="error-service"></div>
+								</label>
+								<label>
+									<select class="dropdown" name="masters" id="select-masters">
+										<option disabled selected hidden>Выберите мастера</option>
+										<option class="option" value="1">Анастасия</option>
+										<option class="option" value="2">Марат</option>
+										<option class="option" value="3">Марина</option>
+										<option class="option" value="4">Данфи</option>
+										<option class="option" value="5">Александр</option>
+										<option class="option" value="6">Владислав</option>
+										<option class="option" value="7">Сергей</option>
+										<option class="option" value="8">Афина</option>
+										<option class="option" value="9">Владимир</option>
+									</select>
+									<div class="error-message" id="error-masters"></div>
+								</label>
+							</div>
+							<div class="input-watch">
+								<label>
+									<input
+										class="input-date"
+										type="text"
+										id="airdatepicker"
+										placeholder="Выберите дату"
+										readonly
+									/>
+									<div class="error-message" id="error-date"></div>
+								</label>
+								<label>
+									<select class="dropdown" name="time" id="select-time">
+										<option disabled selected hidden>Выберите время</option>
+										<option id="select-time0" value="time">10:00</option>
+										<option id="select-time1" value="time">11:00</option>
+										<option id="select-time2" value="time">12:00</option>
+										<option id="select-time3" value="time">13:00</option>
+										<option id="select-time4" value="time">14:00</option>
+										<option id="select-time5" value="time">15:00</option>
+										<option id="select-time6" value="time">16:00</option>
+										<option id="select-time7" value="time">17:00</option>
+										<option id="select-time8" value="time">18:00</option>
+										<option id="select-time9" value="time">19:00</option>
+										<option id="select-time10" value="time">20:00</option>
+										<option id="select-time11" value="time">21:00</option>
+									</select>
+									<div class="error-message" id="error-time"></div>
+								</label>
+							</div>
+							<button
+								type="button"
+								id="submit"
+								class="button hvr-shutter-out-horizontal request-btn"
+							>
+								Оформить заявку
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="thanks-text" id="thanks-text">
+					<h2 class="thanks-title" id="thanks-title">
+						Спасибо что выбрали Strong Club!
+					</h2>
+					<p class="thanks-desc" id="thanks-desc">
+						Наш администратор свяжется с вами в течение 10 минут, для уточнения
+						деталей.
+					</p>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<div class="footer-block">
+					<div class="footer-info">
+						<div class="logo">
+							<img
+								class="logo-img"
+								src="src/images/logo.png"
+								alt="Логитип сайта"
+							/>
+						</div>
+						<div class="footer-schedule">
+							Время работы: <span class="footer-time">Пн-Вс 10:00-21:00</span>
+						</div>
+						<div class="footer-address">
+							г. Москва, Москва Сити, Башня «Деловой центр»
+						</div>
+						<div class="footer-socials">
+							<h2 class="footer-text">Мы в социальных сетях:</h2>
+							<div class="footer-social-link">
+								<a href="https://vk.com/">
+									<img
+										class="social-link-img"
+										src="src/images/icons/vk.png"
+										alt="Иконка Вконтакте"
+									/>
+								</a>
+								<a href="https://www.instagram.com/">
+									<img
+										class="social-link-img"
+										src="src/images/icons/instagram.png"
+										alt="Иконка Instagram"
+									/>
+								</a>
+								<a href="https://ru-ru.facebook.com/">
+									<img
+										class="social-link-img"
+										src="src/images/icons/facebook.png"
+										alt="Иконка Facebook"
+									/>
+								</a>
+							</div>
+						</div>
+						<div class="footer-contacts">
+							<h2 class="footer-email">
+								<a class="footer-link-email" href="mailto:info@barberclub.ru"
+									>E-mail: info@barberclub.ru</a
+								>
+							</h2>
+							<h2 class="footer-phone">
+								<a class="footer-link-phone" href="tel:+79128169396"
+									>+7 912 816-93-96</a
+								>
+							</h2>
+						</div>
+					</div>
+					<iframe
+						class="iframe"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1335.220508939232!2d37.53908857509762!3d55.74869929793939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bdc668da195%3A0x8b10c43edb6e9bc4!2sTOPGUN!5e0!3m2!1sru!2sru!4v1719161997070!5m2!1sru!2sru"
+						width="862"
+						height="436"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					>
+					</iframe>
+				</div>
+				<div class="footer-rights">
+					&copy Все права защищены <span class="footer-year"></span>
+				</div>
+			</footer>
+		</main>
+		<script src="src/scripts/wow.min.js"></script>
+		<script src="src/scripts/jquery.js"></script>
+		<script src="src/scripts/slick.min.js"></script>
+		<script src="src/scripts/dropdown.js"></script>
+		<script src="src/scripts/air-datepicker.js"></script>
+		<script src="src/scripts/jquery.maskedinput.min.js"></script>
+		<script src="src/scripts/jquery-ui.min.js"></script>
+		<script src="src/scripts/index.js"></script>
+	</body>
+</html>
