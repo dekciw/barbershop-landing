@@ -1,41 +1,33 @@
-# Node/npm
+# Node
 node_modules/
+.npm/
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-package-lock.json
-yarn.lock
+pnpm-debug.log*
 
 # Build output
-dist/
-build/
+dist/*
+!.keep
 
 # OS files
 .DS_Store
+Thumbs.db
 
-# Env files
-.env
-
-# Editor directories and files
+# Editor
 .vscode/
 .idea/
-*.sublime-workspace
-
-# Logs
-logs/
-*.log
-
-# Gulp
-.cache/
-
-# Mac artifacts
-Icon\r
-
-# Sass cache
-.sass-cache/
-
-# Temporary files
-tmp/
-
-# Local jetbrains
 *.iml
+
+# Sass/Gulp artifacts
+.sass-cache/
+.cache/
+.tmp/
+
+# Coverage
+coverage/
+
+# Misc
+*.local
